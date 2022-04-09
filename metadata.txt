@@ -1,0 +1,49 @@
+[general]
+name=Shape Tools
+qgisMinimumVersion=3.4
+description=Shape Tools is a collection of geodesic shapes and tools. Create ellipse, line of bearing, pie wedge, donut, arc wedge, polygon, star, ellipse rose, hypocyloid, polyfoil, epicycloid, radial line, and heart shapes. Tools include "XY to Line" tool, densify lines and polygons along geodesic paths, geodesic line break, geodesic measuring and create a measurement layer, geodesic scale, rotate, flip and translate tools, and digitize points at an azimuth & distance tools.
+version=3.4.4
+author=C Hamilton
+email=adenaculture@gmail.com
+about=Shape Tools is a collection of geodesic shapes and tools. Shape Tools is installed in the Vector menu.
+    "Create Shapes" processes a point vector layer to create ellipses, pie wedges, donuts, arc wedges, lines of bearing, polygons, stars, ellipse roses, hypocyloids, polyfoils, epicycloids, radial lines, and hearts based on the table's fields and other parameters.
+    "XY to Line" uses pairs of coordinates from each record to create geodesic lines. 
+    "Geodesic Line Break" breaks lines at the International Date Line. 
+    "Geodesic Densifier" creates geodesic lines and polygons by adding additional vertices along geodesic paths within the shape. 
+    "Geodesic distance & Time Decimation" remove points or vertices from a point or line layer using geodesic distances or time.
+    "Geodesic Measure Tool" measures distances using the WGS 84 ellipsoid and includes the bearing or heading between points. It will even saves the measurements as a layer.
+    "Geodesic Measurement Layer" converts a polygon or line layer a new layer with all geometries measured and labeled.
+    "Geodesic Transformation Tool" can scale, rotate and translate any shape.
+    "Geodesic flip & rotate tools" provide geodesic flip and rotation vector feature transformations.
+    "Azimuth, Distance Digitizer" digitizes points based on a clicked point, an azimuth and distance or creates a geodesic line from a clicked point to an azimuth and distance.
+    "Field Calculator Functions" provides geodesic functions in the field calculator.
+tracker=https://github.com/NationalSecurityAgency/qgis-shapetools-plugin/issues
+repository=https://github.com/NationalSecurityAgency/qgis-shapetools-plugin
+tags=ellipse,pie,donut,bearing,polygon,star,rose,hypocyloid,polyfoil,epicycloid,heart,xy to line,geodesic line,geodesic polygon,densifier,densify,decimate,decimation,simplify,measure,measurements,azimuth,distance,digitize,line split,international date line,surveying,resize,scale,rotate,flip,translate,expression,field calculator
+homepage=https://github.com/NationalSecurityAgency/qgis-shapetools-plugin
+category=Vector
+icon=icon.png
+experimental=False
+deprecated=False
+hasProcessingProvider=yes
+changelog=
+    3.4.4 - Add a settings icon to the geodesic measure tool.
+    3.4.3 - Made geodesic measture tool's unit of measure persistent.
+    3.4.2 - Address feature request #42
+    3.4.1 - Add an option for the measurement layer to include original attributes.
+    3.4.0 - Added field calculator functions.
+    3.3.19 - Rewrote geodesic creation algorithms to include data defined overrides.
+    3.3.18 - Added data defined overrides to the geodesic transformations algorithm.
+    3.3.17 - Addressed issues #37 and #38.
+    3.3.16 - Arc wedge now creates a donut if a full 360 degrees are specified.
+    3.3.15 - Replace PNG icons with SVG icons and resize other PNG icons.
+    3.3.14 - Added geodesic measure tool save to layer significant digits.
+    3.3.13 - Force shape creation to 0-360 degree range when crossing the -180/180 boundary
+    3.3.12 - Add radial lines shape
+    3.3.11 - Bug fix in settings
+    3.3.10 - Added geodesic decimation and time decimation.
+    3.3.9 - Snapping enabled in Azimuth Distance Digitizers.
+    3.3.8 - Snapping was added to geodesic measurement tool.
+    3.3.7 - Added exact coordinate entry in measurement tool.
+    3.3.6 - Added Chinese language support
+    3.3.5 - Added the ability to quickly copy geodesic measurement values onto the clipboard.
