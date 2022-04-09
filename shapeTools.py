@@ -66,7 +66,7 @@ class ShapeTools(object):
         self.createDonutAction.setObjectName('stCreateDonut')
 
         icon = QIcon(self.plugin_dir + '/images/ellipse.png')
-        self.createEllipseAction = menu.addAction(icon, tr('Create ellipse Tao Tao'), self.createEllipse)
+        self.createEllipseAction = menu.addAction(icon, tr('Create ellipse'), self.createEllipse)
         self.createEllipseAction.setObjectName('stCreateEllipse')
 
         icon = QIcon(self.plugin_dir + '/images/rose.png')
